@@ -21,3 +21,7 @@ BEGIN
 
     RETURN winner;
 END;
+$$ LANGUAGE plpgsql;
+
+SELECT * FROM vainqueur('Espagne', 'Danemark', '1/8');
+SELECT * FROM vainqueur('Brésil', 'France', '1/4');
